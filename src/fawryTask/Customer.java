@@ -1,11 +1,13 @@
 package fawryTask;
 
+import java.util.HashMap;
+
 public class Customer {
 	private String name;
 	private double balance;
 	private Cart cart;
 	private int BaseShipping = 30;
-	
+
 	public Customer(String name,double balance) {
 		this.name = name;
 		this.balance = balance;
@@ -40,14 +42,19 @@ public class Customer {
 			throw new IllegalArgumentException("Insufficient balance");
 		}else {
 		balance -= (BaseShipping+cartSubTotal);
+		System.out.println("**Checkout Reciept**");
+		for(CartItem item: cart.getItems()) {
+			System.out.println(item.getQuantity()+"X "+item.getProduct().getName()+" "+item.getTotal()+" EGP");
+			item.getProduct().setQuantity(item.getProduct().getQuantity()-1);
+			
+		}
+		System.out.println("----------------------------");
 		System.out.println("Your order Subtotal: "+cartSubTotal+" EGP");
 		System.out.println("Your shipping fees are: "+BaseShipping);
 		System.out.println("Your total Paid amount: "+(cartSubTotal+BaseShipping));
 		System.out.println("Your current balance: "+balance);
-		}
-		for(CartItem item: cart.getItems()) {
-			item.getProduct().setQuantity(item.getProduct().getQuantity()-1);
-			
+		System.out.println("----------------------------");
+
 		}
 		
 		

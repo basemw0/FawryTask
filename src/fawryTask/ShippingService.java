@@ -16,7 +16,7 @@ public class ShippingService {
 
         }
         for (ShippableInter key : map.keySet()) {
-            System.out.println((int)map.get(key) +"X " + key.getName()+" "+(double)key.getWeight()*(int)map.get(key)+"kg");
+            System.out.println((int)map.get(key) +"X " + key.getName()+" "+(double)key.getWeight()*(int)map.get(key)+" kg");
         }
     	System.out.println("Total Package Weight: "+TotalWeight+" kg");
     }

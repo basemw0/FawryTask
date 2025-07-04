@@ -9,7 +9,7 @@ public class Main {
         Product biscuits = new Expirable("Biscuits", 20.0, 5, LocalDate.now().plusDays(1));
         Product mobileCard = new Product("Scratch Card", 10.0, 50);
 
-        Customer Basem = new Customer("Basem", 6000.0);
+        Customer Basem = new Customer("Beso", 6000.0);
 
         Basem.getCart().addItem(cheese, 1);
         Basem.getCart().addItem(tv, 1);

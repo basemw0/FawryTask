@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Cart {
 	private double totalSum=0;
+	
 	private List<CartItem> cartItems = new ArrayList<>(); 
 	public void addItem(Product product, int quantity) {
 		if(quantity > product.getQuantity()) {
