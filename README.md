@@ -4,7 +4,7 @@ The following project is a simple Ecommerce system Design using OOP principles a
 
 1) Class Diagram
 
-![E-commerce class diagram](https://github.com/user-attachments/assets/b5ae6367-6f47-4926-a5c3-0a31d2e02ca6)
+![E-commerce class diagram](https://github.com/user-attachments/assets/b5ba1f15-1dcc-4257-9970-7be46292bfac)
 
 2) Classes logic and structure:
 
