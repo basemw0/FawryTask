@@ -1,0 +1,17 @@
+*Fawry Rise up Journey Task*
+
+The following project is a simple Ecommerce system Design using OOP principles and java programming Language:
+1)Class Diagram
+![E-commerce class diagram](https://github.com/user-attachments/assets/b5ae6367-6f47-4926-a5c3-0a31d2e02ca6)
+
+2) Classes logic and structure:
+
+- **Product**: Base class with name, price, and stock quantity.  
+- **ShippableProduct**: Extends Product and implements `ShippableInter` with weight.  
+- **ExpirableProduct**: Extends Product and implements `Expirable` with expiry date.  
+- **ExpirableShippable**: Combines both Shippable and Expirable features.  
+- **CartItem**: Represents a product with the desired quantity in the cart.  
+- **Cart**: Holds a list of CartItems and handles subtotal and shipping logic.  
+- **Customer**: Can add products to cart and perform checkout with validation.  
+- **ShippingService**: Accepts all shippable items and prints shipping info.
+
