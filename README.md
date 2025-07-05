@@ -9,8 +9,8 @@ The following project is a simple Ecommerce system Design using OOP principles a
 2) Classes logic and structure:
 
 - **Product**: Base class with name, price, and stock quantity.  
-- **ShippableProduct**: Extends Product and implements `ShippableInter` with weight.  
-- **ExpirableProduct**: Extends Product and adds expirydate attribute.  
+- **Shippable**: Extends Product and implements `ShippableInter` with weight.  
+- **Expirable**: Extends Product and adds expirydate attribute.  
 - **ExpirableShippable**: Combines both Shippable and Expirable features.  
 - **CartItem**: Represents a product with the desired quantity in the cart.  
 - **Cart**: Holds a list of CartItems and handles subtotal and shipping logic.  
